@@ -2,7 +2,8 @@ import {Button} from "@/Components/ui/button.tsx";
 import logo from "../../../public/vite.svg"
 import '/src/App.css'
 import {useState} from "react";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
 
@@ -39,8 +40,8 @@ const Home = () => {
                     </div>
                 </div>
                 <dialog className={`${dialog? "block":"hidden"} border-1 w-[20rem] h-[20rem] inset-0 m-auto rounded-2xl`}>
-                    <div className={""}>
-
+                    <div className={"p-3"}>
+                        <Button variant={""}><FontAwesomeIcon icon={faCircleXmark} /></Button>
                     </div>
                 </dialog>
             </div>
