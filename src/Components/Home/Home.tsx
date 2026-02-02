@@ -40,9 +40,7 @@ const Home = () => {
                     </div>
                 </div>
                 <dialog className={`${dialog? "block":"hidden"} border-1 w-[20rem] h-[20rem] inset-0 m-auto rounded-2xl`}>
-                    <div className={"p-3"}>
-                        <Button variant={""}><FontAwesomeIcon icon={faCircleXmark} /></Button>
-                    </div>
+                    <div className={"p-2"}><FontAwesomeIcon icon={faCircleXmark} onClick={()=>setDialog(false)} /></div>
                 </dialog>
             </div>
         </div>
